@@ -1,0 +1,6 @@
+{
+    "modelPackage" : "com.swift.tracker.trackerg4c.model",
+    "apiPackage" : "com.swift.tracker.trackerg4c.api",
+	"artifactId" : "tracker-g4c",
+	"groupId" : "com.swift.tracker"
+}

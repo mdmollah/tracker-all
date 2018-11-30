@@ -1,0 +1,6 @@
+{
+    "modelPackage" : "com.swift.tracker.trackerv2.model",
+    "apiPackage" : "com.swift.tracker.trackerv2.api",
+	"artifactId" : "tracker-v2",
+	"groupId" : "com.swift.tracker"
+}

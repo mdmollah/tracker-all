@@ -1,0 +1,54 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    
+    <parent>
+      <groupId>com.swift</groupId>
+      <artifactId>parent-pom</artifactId>
+      <version>1.0.0</version>
+    </parent>
+
+
+    <artifactId>tracker</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+    
+		
+    <scm>
+        <connection>scm:git:git@github.com:swiftinc/tracker-java.git</connection>
+        <developerConnection>scm:git:git@github.com:swiftinc/tracker-java.git</developerConnection>
+        <url>https://github.com/swiftinc/tracker-java</url>
+    </scm>
+    
+	<modules>
+		<module>trackerv1</module>
+		<module>trackerv2</module>
+		<module>trackerg4c</module>
+	</modules>
+	
+     <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-enforcer-plugin</artifactId>
+                <version>3.0.0-M1</version>
+                <executions>
+                    <execution>
+                        <id>enforce-maven</id>
+                        <goals>
+                            <goal>enforce</goal>
+                        </goals>
+                        <configuration>
+                            <rules>
+                                <requireMavenVersion>
+                                    <version>2.2.0</version>
+                                </requireMavenVersion>
+                            </rules>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+         </plugins>
+         </build>   
+   
+</project>
